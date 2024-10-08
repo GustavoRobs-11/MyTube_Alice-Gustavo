@@ -1,0 +1,69 @@
+.listagoku{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 70px;
+    padding-top: 5px;
+}
+.principal{
+    padding-top: 15px;
+}
+
+body{
+    margin:50px;
+    margin-top: 5px;
+}
+.videos{
+    display:flex;
+    flex-direction: row;
+    padding: 10px;
+}
+h3{
+    padding: 10px;
+}
+.container{
+    display: flex;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding:5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.search-bar button {
+    padding: 8px;
+    border: none;
+    background-color: #db1d16;
+    color: white;
+    border-radius: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #606060;
+    font-weight: 600;
+}
