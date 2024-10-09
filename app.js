@@ -23,12 +23,12 @@ for (let i = 0; dados.length > i; i++) {
       console.log("conectado")
       let n = JSON.stringify(dados[i]);
       sessionStorage.setItem("user", n)
-      let url = "airline.html"
+      let url = "index.html"
       window.open(url)
       break
-    } 
-  } 
- }
+    }
+  }
+ }alert("usuario não encontrado")
 } 
 //SessionStore getItem
 function logado(){
