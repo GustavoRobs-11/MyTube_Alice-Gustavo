@@ -1,11 +1,12 @@
 function local(){
-    let dados = [ { "id":1,"nome":"will","senha":123 }, 
-                  { "id":2,"nome":"bob","senha":2222 }, 
-                  { "id":3,"nome":"ringo","senha":3333 } 
+    let dados = [ { "id":1,"nome":"alice","senha":123 }, 
+                  { "id":2,"nome":"gustavo","senha":777 }, 
+                  { "id":3,"nome":"leon","senha":333 } 
                 ]       
     let n = JSON.stringify(dados);
     localStorage.setItem("tds", n);   
-    return dados    
+    return dados 
+  
 }
 
 function logon(){  
@@ -22,12 +23,12 @@ for (let i = 0; dados.length > i; i++) {
       console.log("conectado")
       let n = JSON.stringify(dados[i]);
       sessionStorage.setItem("user", n)
-      let url = "airline.html"
+      let url = "index.html"
       window.open(url)
       break
-    } 
-  } 
- }
+    }
+  }
+ }alert("usuario não encontrado")
 } 
 //SessionStore getItem
 function logado(){
@@ -54,7 +55,8 @@ function adicionar() {
   ClienteArray.push(user)
   localStorage.setItem("tds", JSON.stringify(ClienteArray))
   alert("Registro adicionado.")
-
+  document.querySelector("#login").value = ""
+  document.querySelector("#senha").value = ""
 }
 
  function buscar() {
