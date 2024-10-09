@@ -8,10 +8,25 @@
 .principal{
     padding-top: 15px;
 }
+hr{
+    margin-bottom:15px;
+}
+.user{
+    color: aliceblue;
+    display:flex;
+    justify-content: left;
+}
+.user p {
+    margin-left:10px;
+}
+.like{
+    display:flex;
+    align-items: right;
+}
 
 body{
-    margin:50px;
-    margin-top: 5px;
+    background-color: rgb(28, 28, 28);
+    margin: 0px;
 }
 .videos{
     display:flex;
@@ -20,16 +35,21 @@ body{
 }
 h3{
     padding: 10px;
+    color: aliceblue;
+}
+h2{
+    color: aliceblue;
 }
 .container{
     display: flex;
+    margin:30px;
 }
 
-.navbar {
+header {
     display: flex;
     align-items: center;
-    background-color: #f9f9f9;
-    padding:5px;
+    background-color: #f7f7f7;
+    padding: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -44,17 +64,17 @@ h3{
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 
 .search-bar button {
-    padding: 8px;
     border: none;
     background-color: #db1d16;
     color: white;
-    border-radius: 2px;
+    border-radius: 4px;
     margin-left: 5px;
     cursor: pointer;
+    padding: 8px;
 }
 
 .menu {
@@ -66,4 +86,5 @@ h3{
     text-decoration: none;
     color: #606060;
     font-weight: 600;
+    padding: 8px;
 }
