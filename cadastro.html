@@ -5,10 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="cadastro.css">
 </head>
 <body onload="local()">
-    <input type="text" id="login" placeholder="login">
-    <input type=" text" id="senha" placeholder="senha">
-    <button type="submit" onclick="adicionar() ">Cadastrar</button>
+    <div class="backgroundbox">
+        <div class="container">
+            <h1>Cadastro</h1>
+            <div class="input">
+                <p>E-mail</p> 
+                <input type="text" id="login" placeholder="login">
+            </div>
+            <div>
+                <p>Senha</p>
+                <input type=" text" id="senha" placeholder="senha">
+            </div>
+            <div>
+                <a href="index.html"><button type="submit">Voltar</button></a>
+                <button type="submit" onclick="adicionar() ">Cadastrar</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
