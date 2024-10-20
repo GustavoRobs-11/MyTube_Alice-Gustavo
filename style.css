@@ -1,9 +1,10 @@
 .listavideos{
     display:flex;
-    flex-direction: column;
-    align-items: flex-end;
-    padding: 70px;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
     padding-top: 5px;
+    padding-left: 300px;
 }
 .principal{
     padding-top: 15px;
@@ -41,6 +42,8 @@ body{
     display:flex;
     flex-direction: row;
     padding: 10px;
+    align-items: center;
+    justify-content: center;
 }
 h3{
     padding: 10px;

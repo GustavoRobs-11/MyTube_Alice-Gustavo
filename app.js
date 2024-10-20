@@ -61,7 +61,6 @@ function adicionar() {
   document.querySelector("#senha").value = ""
   document.querySelector("#nome").value = ""
   document.querySelector("#numero").value = ""
-  window.open("index.html")
 }
 
  function buscar() {
