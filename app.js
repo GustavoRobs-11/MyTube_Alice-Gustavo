@@ -11,7 +11,7 @@ function local(){
 
 function logon(){  
   const dados = JSON.parse(localStorage.getItem("tds"))
-  let email = document.querySelector("#email").value
+  let login = document.querySelector("#email").value
   let senha = document.querySelector("#senha").value
 
 for (let i = 0; dados.length > i; i++) {
@@ -19,7 +19,7 @@ for (let i = 0; dados.length > i; i++) {
      alert("Verificando")
     //  alert("encontrou: " + dados[i].nome + ":" + i)
   } else {
-    if (email == dados[i].email && senha == dados[i].senha) {
+    if (login == dados[i].email && senha == dados[i].senha) {
       console.log("conectado")
       let n = JSON.stringify(dados[i]);
       sessionStorage.setItem("user", n)
@@ -28,7 +28,7 @@ for (let i = 0; dados.length > i; i++) {
       break
     }
   }
- }alert("usuario não encontrado")
+ }
 } 
 //SessionStore getItem
 function logado(){
@@ -40,7 +40,7 @@ function logado(){
 //SessionStore remove Item
 function logaout(){
   sessionStorage.removeItem("user")
-  let url = "localStorage.html"
+  let url = "index.html"
   window.open(url)
   window.close()    
 }
@@ -61,6 +61,8 @@ function adicionar() {
   document.querySelector("#senha").value = ""
   document.querySelector("#nome").value = ""
   document.querySelector("#numero").value = ""
+  
+
 }
 
  function buscar() {
