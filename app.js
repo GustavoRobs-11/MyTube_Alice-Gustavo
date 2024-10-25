@@ -23,9 +23,9 @@ for (let i = 0; dados.length > i; i++) {
       console.log("conectado")
       let n = JSON.stringify(dados[i]);
       sessionStorage.setItem("user", n)
-      let url = "index.html"
-      window.open(url)
+      window.location.href= "index.html"
       break
+      
     }
   }
  }
@@ -61,6 +61,7 @@ function adicionar() {
   document.querySelector("#senha").value = ""
   document.querySelector("#nome").value = ""
   document.querySelector("#numero").value = ""
+  window.location.href= "login.html"
   
 
 }
