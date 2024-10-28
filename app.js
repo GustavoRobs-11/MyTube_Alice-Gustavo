@@ -32,10 +32,10 @@ for (let i = 0; dados.length > i; i++) {
 } 
 //SessionStore getItem
 function logado(){
- let dados = JSON.parse(sessionStorage.getItem("user"))
- let nome = dados.nome  
- document.getElementById("nome").innerHTML = "Bem vindo " + nome
- return nome
+  let dados = JSON.parse(sessionStorage.getItem("user"))
+  let nome = dados.nome  
+  document.getElementById("nome").innerHTML = "Bem vindo " + nome
+  return nome
 }
 //SessionStore remove Item
 function logaout(){
