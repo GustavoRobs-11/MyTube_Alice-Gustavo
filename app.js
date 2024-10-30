@@ -1,7 +1,7 @@
 function local(){
-    let dados = [ { "id":1,"nome":"alice","senha":123,"numero":11, "email": "alice123@gmail.com"}, 
-                  { "id":2,"nome":"gustavo","senha":777,"numero":11, "email": "alice123@gmail.com"}, 
-                  { "id":3,"nome":"leon","senha":333, "numero":11, "email": "alice123@gmail.com"} 
+    let dados = [ { "id":1,"nome":"Alice","senha":123,"numero":11, "email": "alice123@gmail.com"}, 
+                  { "id":2,"nome":"Gustavo","senha":777,"numero":11, "email": "gustavo123@gmail.com"}, 
+                  { "id":3,"nome":"Leon","senha":333, "numero":11, "email": "leon123@gmail.com"} 
                 ]       
     let n = JSON.stringify(dados);
     localStorage.setItem("tds", n);   
@@ -33,9 +33,11 @@ for (let i = 0; dados.length > i; i++) {
 //SessionStore getItem
 function logado(){
   let dados = JSON.parse(sessionStorage.getItem("user"))
-  let nome = dados.nome  
-  document.getElementById("nome").innerHTML = "Bem vindo " + nome
-  return nome
+
+  if (dados !== null){
+    document.getElementById("nome").innerHTML = "Bem vindo " + dados.nome + " !"
+  }
+
 }
 //SessionStore remove Item
 function logaout(){

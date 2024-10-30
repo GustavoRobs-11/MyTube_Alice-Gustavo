@@ -33,6 +33,13 @@ hr{
     display:flex;
     align-items: right;
 }
+.nome{
+    display: flex;
+    justify-content: center;
+    background-color:#db1d16;
+    height: 30px;
+    margin:0px;
+}
 
 body{
     background-color: rgb(28, 28, 28);
